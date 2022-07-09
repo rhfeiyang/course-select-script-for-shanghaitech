@@ -122,11 +122,10 @@ def main():
             lambda d: d.find_element(By.XPATH, '//*[@id="MLeft"]/div/ul/li[1]/a')).click()
         WebDriverWait(driver, timeout=5).until(
             lambda d: d.find_element(By.XPATH, '//*[@id="MLeft"]/div/table[2]/tbody/tr[5]/td[1]/div[2]/a')).click()
-        WebDriverWait(driver, timeout=5).until(lambda d: d.find_element_by_link_text("进入选课>>>>")).click()
+        WebDriverWait(driver, timeout=5).until(lambda d: d.find_element(By.LINK_TEXT,"进入选课>>>>")).click()
         driver.switch_to.window(driver.window_handles[-1])
-        # for i in range(3):
         while time() <= on + 90:
-            # while 1:
+        #while 1:
             if not classes: break
             bac_classes = deepcopy(classes)
             for cla in bac_classes:
