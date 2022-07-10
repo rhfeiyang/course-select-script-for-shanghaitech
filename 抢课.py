@@ -13,7 +13,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # os.environ['REQUESTS_CA_BUNDLE'] =  os.path.join(os.path.dirname(sys.argv[0]), 'cacert.pem')
 
-#IDE运行须注释
+#IDE运行须注释 shanghaitech rh
 os.environ['REQUESTS_CA_BUNDLE'] = os.path.join(sys._MEIPASS, 'cacert.pem')
 
 
@@ -92,10 +92,10 @@ def main():
     option.add_argument("--window-size=1920,1080")
     option.add_argument('--no-sandbox')
     option.add_argument('--disable-dev-shm-usage')
-    option.add_argument("start-maximized")  # https://stackoverflow.com/a/26283818/1689770
-    option.add_argument("enable-automation")  # https://stackoverflow.com/a/43840128/1689770
-    option.add_argument("--no-sandbox")  # https://stackoverflow.com/a/50725918/1689770
-    option.add_argument("--disable-infobars")  # https://stackoverflow.com/a/43840128/1689770
+    option.add_argument("start-maximized")  # https://stackoverflow.com/ab/26283818/1689770
+    option.add_argument("enable-automation")  # https://stackoverflow.com/ay/43840128/1689770
+    option.add_argument("--no-sandbox")  # https://stackoverflow.com/ar/50725918/1689770
+    option.add_argument("--disable-infobars")  # https://stackoverflow.com/ah/43840128/1689770
     option.add_argument("--disable-dev-shm-usage")  # https://stackoverflow.com/a/50725918/1689770
     option.add_argument("--disable-browser-side-navigation")  # https://stackoverflow.com/a/49123152/1689770
     option.add_argument(
