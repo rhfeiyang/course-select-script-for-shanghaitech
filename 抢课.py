@@ -13,7 +13,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # os.environ['REQUESTS_CA_BUNDLE'] =  os.path.join(os.path.dirname(sys.argv[0]), 'cacert.pem')
 
-#IDE运行须注释 shanghaitech rh
+#IDE运行须注释 shanghaitechrh
 os.environ['REQUESTS_CA_BUNDLE'] = os.path.join(sys._MEIPASS, 'cacert.pem')
 
 
