@@ -16,7 +16,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 #IDE运行须注释
 os.environ['REQUESTS_CA_BUNDLE'] = os.path.join(sys._MEIPASS, 'cacert.pem')
 
-classes = []
 
 def waitbegin():
     zero_time = mktime(strptime(strftime('%Y年%m月%d日'), '%Y年%m月%d日'))
@@ -30,7 +29,6 @@ def waitbegin():
                         sleep(80)
                     elif (on - time()) <= 40:
                         print("即将开始：", strftime('%m月%d日%H:%M:%S', localtime(on)))
-                        print("课程列表：", classes)
                         return on
                     else:
                         sleep(4)
@@ -113,6 +111,7 @@ def main():
         pwd = input("请输入密码：")
     while classes:
         on = waitbegin()
+        print("课程列表：", classes)
         driver = login(option, username, pwd, False)
         WebDriverWait(driver, timeout=5).until(
             lambda d: d.find_element(By.XPATH,
